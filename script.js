@@ -111,7 +111,7 @@ startButton.addEventListener('click', () => {
   startButton.classList.toggle("hidden");
   resetButton.classList.toggle("hidden");
   spinner.classList.toggle("spinning");
-  statusDisplay.innerHTML = "In session!";
+  statusDisplay.innerHTML = "focoTotal";
   minutes = sessionTimer - 1;
   function timerFn() {
     seconds--;
@@ -132,14 +132,14 @@ startButton.addEventListener('click', () => {
         minutes = breakTimer - 1;
         seconds = 60;
         elapsedPercent = 0;
-        statusDisplay.innerHTML = "Take a break!";
+        statusDisplay.innerHTML = "relaxaDev";
         console.log("break time");
       } else {
         breakTime = false;
         minutes = sessionTimer - 1;
         seconds = 60;
         elapsedPercent = 0;
-        statusDisplay.innerHTML = "In session!";
+        statusDisplay.innerHTML = "focoTotal";
         console.log("work time");
       }
     }
